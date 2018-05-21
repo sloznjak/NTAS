@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# Vjezbe
+# NTAS
+vježbe iz kolegija NTAS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
 
@@ -27,6 +27,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 =======
-# NTAS
-vježbe iz kolegija NTAS
->>>>>>> acfeb46f4367bb80377d0bd496c7d4dff7a8ce89
+
