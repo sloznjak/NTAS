@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row mt-5 mb-5 justify-content-center">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary" (click)="countDown()">-</button>
+      <button disabled> {{count}}</button>
+      <button type="button" class="btn btn-secondary" (click)="countUp()">+</button>
+    </div>
+    <button type="button" class="btn btn-primary ml-3" (click)="selectSort()">SORT</button>
+  </div>
+  <table class="table">
+    <tbody>
+      <tr *ngFor="let row of table; let index = index;">
+        <th scope="row">{{index === 0 ? '' : index}}</th>
+        <td *ngFor="let number of row">{{number}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
