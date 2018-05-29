@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="input-group max-width-500 ml-auto mr-auto mt-3 mb-3">
+    <input type="text" class="form-control" placeholder="Enter element:" aria-label="Enter element:"
+           aria-describedby="basic-addon2" [(ngModel)]="input">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button" (click)="addItem()">Add</button>
+    </div>
+  </div>
+
+  <div class="buttons max-width-500 ml-auto mr-auto mt-3 mb-3">
+    <button class="btn btn-secondary" type="button" (click)="preOrder()">Preorder</button>
+    <button class="btn btn-secondary ml-1" type="button" (click)="inOrder()">Inorder</button>
+    <button class="btn btn-secondary ml-1" type="button" (click)="postOrder()">Postorder</button>
+    <button class="btn btn-danger ml-1" type="button" (click)="reset()">Reset</button>
+  </div>
+
+  <div class="mt-5">
+    <h5>Added data: </h5>
+    <span *ngFor="let data of addedData; let last = last"> {{data}} {{!last ? ', ': ''}}</span>
+  </div>
+
+  <div class="mt-5" *ngIf="orderType !== ''">
+    <h5>{{orderType}}</h5>
+    <ul>
+      <li *ngFor="let item of orderedData">
+        {{ item }}
+      </li>
+    </ul>
+  </div>
+
+</div>
